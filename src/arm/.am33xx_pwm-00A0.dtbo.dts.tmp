@@ -1,0 +1,71 @@
+# 1 "src/arm/am33xx_pwm-00A0.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "src/arm/am33xx_pwm-00A0.dts"
+# 9 "src/arm/am33xx_pwm-00A0.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ compatible = "ti,beaglebone", "ti,beaglebone-black", "ti,beaglebone-green";
+
+
+ part-number = "am33xx_pwm";
+ version = "00A0";
+
+ fragment@0 {
+  target = <&epwmss0>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+
+ fragment@1 {
+  target = <&ehrpwm0>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+
+ fragment@2 {
+  target = <&ecap0>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+
+ fragment@3 {
+  target = <&epwmss1>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+
+ fragment@4 {
+  target = <&ehrpwm1>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+
+ fragment@5 {
+  target = <&epwmss2>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+
+ fragment@6 {
+  target = <&ehrpwm2>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+
+ fragment@7 {
+  target = <&ecap2>;
+  __overlay__ {
+   status = "okay";
+  };
+ };
+};
